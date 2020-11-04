@@ -1,0 +1,7 @@
+.encabezado-formulario{
+    background-color: mediumpurple;
+}
+
+.custom-file-label::after{
+    content: "buscar" !important;
+}
