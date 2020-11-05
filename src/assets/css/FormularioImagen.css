@@ -3,5 +3,9 @@
 }
 
 .custom-file-label::after{
-    content: "buscar" !important;
+    content: "Buscar" !important;
+}
+
+.btn-purple{
+    background-color: mediumpurple;
 }
