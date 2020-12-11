@@ -4,19 +4,18 @@ import "../assets/css/FormularioImagen.css";
 class FormularioImagen extends Component {
   constructor(props) {
     super(props);
-    this.fileInput = React.createRef();
     this.state = {
       textoLabel: "Seleccione un archivo",
     };
   }
 
-  handleChange = (event) =>{
+  cambiarLabel = (event) =>{
     this.setState({ textoLabel: event.target.files[0].name });
   }
 
   render() {
     return (
-      <div className="col-md-6">
+      <div className="col-md-6 mt-2">
         <div className="card border-rounded border-dark shadow">
           <div className="card-header encabezado-formulario text-center">
             <h5>Ingrese una imagen valida</h5>
@@ -28,8 +27,9 @@ class FormularioImagen extends Component {
                   type="file"
                   className="custom-file-input"
                   id="inputGroupFile01"
-                  onChange={this.handleChange}
+                  onChange={this.cambiarLabel}
                   aria-describedby="inputGroupFileAddon01"
+                  accept="image/*"
                 />
                 <label className="custom-file-label" htmlFor="inputGroupFile01">
                   {this.state.textoLabel}

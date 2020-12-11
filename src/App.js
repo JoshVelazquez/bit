@@ -1,6 +1,7 @@
-import './assets/css/App.css';
-import Navbar from './components/Navbar';
-import FormularioImagen from './components/FormularioImagen';
+import "./assets/css/App.css";
+import Navbar from "./components/Navbar";
+import FormularioImagen from "./components/FormularioImagen";
+import FormularioDatos from "./components/FormularioDatos";
 
 function App() {
   return (
@@ -8,7 +9,8 @@ function App() {
       <Navbar />
       <div className="container mt-3">
         <div className="row">
-            <FormularioImagen />
+          <FormularioImagen />
+          <FormularioDatos />
         </div>
       </div>
     </div>
